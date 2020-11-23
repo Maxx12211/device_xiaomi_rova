@@ -135,7 +135,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     libdisplayconfig \
     libdisplayconfig.qti \
-    liboverlay \
     libgenlock \
     libqdMetaData.system \
     libtinyxml \
