@@ -23,3 +23,7 @@ allow init sysfs_leds:lnk_file r_file_perms;
 
 # Transitions to seclabel processes in init.rc
 domain_auto_trans(init, vendor_charger_exec, vendor_charger)
+
+allow init system_file:dir relabelfrom;
+allow init system_file:file relabelfrom;
+allow init same_process_hal_file:file relabelfrom;
