@@ -5,9 +5,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/aosp_rova.mk
+    $(LOCAL_DIR)/blaze_rova.mk
 
 COMMON_LUNCH_CHOICES := \
-    aosp_rova-user \
-    aosp_rova-userdebug \
-    aosp_rova-eng
+    blaze_rova-user \
+    blaze_rova-userdebug \
+    blaze_rova-eng

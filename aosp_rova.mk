@@ -13,14 +13,19 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_n_mr1.mk
 TARGET_BOOT_ANIMATION_RES := 720
 USE_PIXEL_CHARGING := true
 TARGET_FACE_UNLOCK_SUPPORTED := true
-$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
+$(call inherit-product, vendor/blaze/config/common_full_phone.mk)
 
 # Inherit from rova device
 $(call inherit-product, device/xiaomi/rova/device.mk)
 
+# Some Build Flags
+BLAZE_MAINTAINER := @maxx459
+TARGET_USES_BLUR := false
+TARGET_INCLUDE_LIVE_WALLPAPERS := false
+
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := rova
-PRODUCT_NAME := aosp_rova
+PRODUCT_NAME := blaze_rova
 BOARD_VENDOR := Xiaomi
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Redmi 4A / 5A
