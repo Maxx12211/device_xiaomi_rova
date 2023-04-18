@@ -51,6 +51,8 @@ ro.bluetooth.hfp.ver=1.7
 ro.qualcomm.bt.hci_transport=smd
 bluetooth.sco.disable_enhanced_connection=1
 bluetooth.le.disable_apcf_extended_features=1
+persist.vendor.bt.a2dp_offload_cap=sbc-aac-aptx-aptxhd-ldac
+persist.vendor.qcom.bluetooth.a2dp_offload_cap=sbc-aac-aptx-aptxhd-ldac
 
 # Camera
 camera.display.lmax=1280x720
