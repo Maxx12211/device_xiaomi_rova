@@ -50,6 +50,7 @@ vendor.qcom.bluetooth.soc=smd
 ro.bluetooth.hfp.ver=1.7
 ro.qualcomm.bt.hci_transport=smd
 bluetooth.sco.disable_enhanced_connection=1
+bluetooth.le.disable_apcf_extended_features=1
 
 # Camera
 camera.display.lmax=1280x720
