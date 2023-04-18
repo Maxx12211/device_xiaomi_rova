@@ -1,0 +1,10 @@
+[
+  {
+    "repository": "kernel_xiaomi_rova",
+    "target_path": "kernel/xiaomi/rova",
+  },
+  {
+    "repository": "vendor_xiaomi_rova",
+    "target_path": "vendor/xiaomi/rova",   
+  }
+]
