@@ -13,14 +13,28 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_n_mr1.mk
 TARGET_BOOT_ANIMATION_RES := 720
 USE_PIXEL_CHARGING := true
 TARGET_FACE_UNLOCK_SUPPORTED := true
-$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
+$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+
+#RisingOS Flags
+RISING_MAINTAINER := @maxx459
+WITH_GMS := false
+TARGET_CORE_GMS := false
+TARGET_CORE_GMS_EXTRAS := false
+TARGET_ENABLE_BLUR := false
+TARGET_HAS_UDFPS := false
+TARGET_SUPPORTS_QUICK_TAP := false
+SUSHI_BOOTANIMATION := 720
+TARGET_USE_GOOGLE_TELEPHONY := false
+TARGET_ENABLE_PIXEL_GBOARD_PADDINGS := true
+TARGET_EXCLUDES_AUDIOFX := true
+
 
 # Inherit from rova device
 $(call inherit-product, device/xiaomi/rova/device.mk)
 
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := rova
-PRODUCT_NAME := aosp_rova
+PRODUCT_NAME := lineage_rova
 BOARD_VENDOR := Xiaomi
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Redmi 4A / 5A
