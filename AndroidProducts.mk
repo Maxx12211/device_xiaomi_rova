@@ -5,9 +5,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/aosp_rova.mk
+    $(LOCAL_DIR)/droidx_rova.mk
 
 COMMON_LUNCH_CHOICES := \
-    aosp_rova-user \
-    aosp_rova-userdebug \
-    aosp_rova-eng
+    droidx_rova-user \
+    droidx_rova-userdebug \
+    droidx_rova-eng
