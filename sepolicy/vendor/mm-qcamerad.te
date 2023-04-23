@@ -1,7 +1,6 @@
 type_transition mm-qcamerad camera_data_file:sock_file camera_socket "cam_socket1";
 type_transition mm-qcamerad camera_data_file:sock_file camera_socket "cam_socket2";
 
-allow mm-qcamerad camera_prop:file { read open };
 allow mm-qcamerad camera_socket:dir w_dir_perms;
 allow mm-qcamerad camera_socket:sock_file { create unlink write };
 allow mm-qcamerad default_prop:file { getattr };
@@ -17,6 +16,7 @@ allow mm-qcamerad vendor_camera_prop:property_service { set };
 
 dontaudit mm-qcamerad default_prop:file { read open };
 
+get_prop(mm-qcamerad, camera_prop)
 get_prop(mm-qcamerad, vendor_camera_prop)
 get_prop(mm-qcamerad, exported_default_prop)
 set_prop(mm-qcamerad, vendor_camera_prop)
